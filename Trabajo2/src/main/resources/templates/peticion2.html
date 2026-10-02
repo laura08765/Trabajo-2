@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Petición 2</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .resultado {
+            width: 300px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+        }
+
+        .resultado p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Petición 2</h1>
+
+<div class="resultado">
+    <p>Conteo: <span th:text="${conteo}"></span></p>
+    <p>Suma: <span th:text="${suma}"></span></p>
+    <p>Promedio: <span th:text="${promedio}"></span></p>
+    <p>Min: <span th:text="${min}"></span></p>
+    <p>Max: <span th:text="${max}"></span></p>
+</div>
+
+</body>
+</html>

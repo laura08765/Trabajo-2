@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Petición 4</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .resultado {
+            width: 500px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+        }
+
+        .resultado p {
+            margin: 12px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Petición 4</h1>
+
+<div class="resultado">
+    <p>
+        ¿Existe algún cultivo de  Hortaliza?
+        <span th:text="${hayHortaliza}"></span>
+    </p>
+
+    <p>
+        ¿Existe algún cultivo con más de 80 semillas?
+        <span th:text="${hayMasDe80Semillas}"></span>
+    </p>
+
+    <p>
+        ¿Ningún cultivo está ubicado en Playa?
+        <span th:text="${ningunoEstaEnLaPlaya}"></span>
+    </p>
+</div>
+
+</body>
+</html>
